@@ -19,7 +19,7 @@ export class ImageBrightness implements OnInit{
     
     @HostListener('mouseenter') mouseover(eventData: Event){
     // //   this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'blue', false, false);  
-    this.brightness = 'brightness(150%)';
+    this.brightness = 'brightness(115%)';
     }
 
     @HostListener('mouseleave') mouseleave(eventData: Event){
