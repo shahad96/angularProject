@@ -7,11 +7,28 @@ export class ProductsService{
         {name:'Book of nights' , image:'https://images-na.ssl-images-amazon.com/images/I/91bm8DI1FgL.jpg'},
     ];
 
+    private cart:number[]=[];
+
     getProducts(){
         return this.products;
     }
 
     getProductDetails(i:number){
         return this.products[i];
+    }
+
+    addToCart(i:number){
+        this.cart.push(i);
+    }
+
+    getCart(){
+        const cartProducts:{name:String , image:String}[]=[];
+
+        for (let i = 0; i < this.cart.length; i++) {
+            cartProducts.push(this.products[this.cart[i]]); 
+        }
+
+        return cartProducts;
+
     }
 }

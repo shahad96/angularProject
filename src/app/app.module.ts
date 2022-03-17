@@ -8,12 +8,14 @@ import { LogInModule } from './login/login.module'
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { ProductsService } from './products.service';
+// import { ImageBrightness } from './image-directive';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    // ImageBrightness
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { ProductsService } from './products.service';
     CartModule,
     HomeModule,
     LogInModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]

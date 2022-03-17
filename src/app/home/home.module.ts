@@ -3,16 +3,18 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { CommonModule } from '@angular/common';
 import { DetailsComponent } from './details/details.component';
+import { ImageBrightness } from '../image-directive';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    ImageBrightness
   ],
   imports: [
     HomeRoutingModule,
-    CommonModule
+    CommonModule,
     
   ],
   providers: [],

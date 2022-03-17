@@ -17,15 +17,17 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.products = this.productsService.getProducts();
-    console.log(this.products);
-    
+    this.products = this.productsService.getProducts();    
   }
 
   details(i:number){
     this.router.navigate(['/details'],{queryParams: {id : i}});
     // {relativeTo: this.route}
     // console.log(i); 
+  }
+
+  addToCart(i:number){
+    this.productsService.addToCart(i);
   }
 
 }
