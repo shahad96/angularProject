@@ -24,8 +24,12 @@ export class ProductsService{
     getCart(){
         const cartProducts:{name:String , image:String}[]=[];
 
-        for (let i = 0; i < this.cart.length; i++) {
-            cartProducts.push(this.products[this.cart[i]]); 
+        const uniqueCart = this.cart.filter((c, index) => {
+            return this.cart.indexOf(c) === index;
+        });
+
+        for (let i = 0; i < uniqueCart.length; i++) {
+            cartProducts.push(this.products[uniqueCart[i]]); 
         }
 
         return cartProducts;
