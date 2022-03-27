@@ -8,6 +8,7 @@ import { LogInModule } from './login/login.module'
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { ProductsService } from './products.service';
+import {HttpClientModule} from '@angular/common/http';
 // import { ImageBrightness } from './image-directive';
 
 
@@ -25,6 +26,7 @@ import { ProductsService } from './products.service';
     HomeModule,
     LogInModule,
     FormsModule,
+    HttpClientModule
     
   ],
   providers: [ProductsService],

@@ -4,17 +4,22 @@ import { HomeComponent } from './home.component';
 import { CommonModule } from '@angular/common';
 import { DetailsComponent } from './details/details.component';
 import { ImageBrightness } from '../image-directive';
+import { SecoundPipe } from '../secound.pips';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     DetailsComponent,
-    ImageBrightness
+    ImageBrightness,
+    SecoundPipe
   ],
   imports: [
     HomeRoutingModule,
     CommonModule,
+    HttpClientModule
+    
     
   ],
   providers: [],

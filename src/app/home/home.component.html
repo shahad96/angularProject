@@ -7,6 +7,8 @@
       <img class="card-img-top" [src]='product.image' (click)="details(i)" alt="Card image cap" class='image' imageBrightness >
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
+        <!-- <h5 class="card-title">{{product.name | secound}}</h5> -->
+        <h5 class="card-title">{{name | uppercase}}</h5>
         <button class="btn btn-primary" (click)="addToCart(i)">add to cart</button>
       </div>
     </div>
